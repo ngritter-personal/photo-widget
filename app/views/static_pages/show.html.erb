@@ -1,0 +1,10 @@
+<!-- app/views/static_pages/show.html.erb -->
+
+<h1>Photos for Photostream <%= @photostream_url %></h1>
+
+<% @photos.each do |photo| %>
+  <div class="photo">
+    <h2><%= photo[:title] %></h2>
+    <img src="<%= photo[:url] %>" alt="<%= photo[:title] %>">
+  </div>
+<% end %>

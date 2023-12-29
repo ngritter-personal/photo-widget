@@ -1,0 +1,9 @@
+<!-- app/views/static_pages/home.html.erb -->
+
+<h1>Welcome to Flickr Photo Viewer!</h1>
+
+<%= form_tag(show_photos_path, method: 'get') do %>
+  <label for="photostream_url">Enter Flickr Photostream URL:</label>
+  <%= text_field_tag 'photostream_url' %>
+  <%= submit_tag 'View Photos' %>
+<% end %>
